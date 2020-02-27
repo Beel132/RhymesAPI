@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <title>Rhymes API</title>
+</head>
+
+<body>
+    <div id="container">
+        <p>Write down <span class="color">a word</span> and find others that rhyme with it</p>
+
+        <form action="javascript:RhymeBrainSubmit()">
+            <input type=text id="RhymeBrainInput" autocomplete="off" spellcheck="false" />
+            <p>Write it in english</p>
+
+            <button>search</button>
+        </form>
+    </div>
+
+
+    <script>
+        var RhymeBrainMaxResults = 100;
+    </script>
+
+    <script src="https://rhymebrain.com/external.js"></script>
+</body>
+
+</html>
